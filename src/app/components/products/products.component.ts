@@ -19,7 +19,6 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit() {
     this._animeService.getAnimes().subscribe((response) => {
-      console.log(response);
       this.products = response;
     });
   }
